@@ -1,26 +1,39 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Hero } from "@/components/Hero";
+import { Manifesto } from "@/components/Manifesto";
+import { ChaptersGrid } from "@/components/Chapters";
+import { PhoenixInterlude } from "@/components/PhoenixInterlude";
+import { PurposeSection } from "@/components/PurposeSection";
+import { FinalCTA } from "@/components/FinalCTA";
 
 export const Route = createFileRoute("/")({
   component: Index,
+  head: () => ({
+    meta: [
+      { title: "9Mane Black — A jornada da sua alma codificada em números" },
+      {
+        name: "description",
+        content:
+          "9Mane Black: uma experiência imersiva de numerologia esotérica. A alma decifrada em vibração. Lançamento 30 de Abril.",
+      },
+      { property: "og:title", content: "9Mane Black — Numerologia Esotérica" },
+      {
+        property: "og:description",
+        content: "A jornada da sua alma codificada em números. 30 de Abril.",
+      },
+    ],
+  }),
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
-
 function Index() {
-  return <PlaceholderIndex />;
+  return (
+    <main className="bg-background text-foreground">
+      <Hero />
+      <Manifesto />
+      <ChaptersGrid />
+      <PhoenixInterlude />
+      <PurposeSection />
+      <FinalCTA />
+    </main>
+  );
 }
