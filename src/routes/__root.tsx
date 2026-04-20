@@ -29,14 +29,18 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "9Mane" },
+      { name: "description", content: "9Mane Black is an immersive one-page website exploring esoteric numerology through a scrollytelling experience." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "9Mane" },
+      { property: "og:description", content: "9Mane Black is an immersive one-page website exploring esoteric numerology through a scrollytelling experience." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "9Mane" },
+      { name: "twitter:description", content: "9Mane Black is an immersive one-page website exploring esoteric numerology through a scrollytelling experience." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/2b543af4-8fae-4a20-9c79-34a72050bd71/id-preview-95ac3c48--0b08cede-a448-444d-91e5-15ea36a91384.lovable.app-1776695266692.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/2b543af4-8fae-4a20-9c79-34a72050bd71/id-preview-95ac3c48--0b08cede-a448-444d-91e5-15ea36a91384.lovable.app-1776695266692.png" },
     ],
     links: [
       {
